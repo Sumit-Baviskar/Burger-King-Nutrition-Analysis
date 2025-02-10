@@ -1,12 +1,12 @@
 # Burger King Nutrition Analysis
 
 
-### **📌 Introduction**  
+# **📌 Introduction**  
 Fast-food consumption has significantly increased worldwide, making it crucial to analyze the nutritional value of menu items offered by leading brands like **Burger King**. Consumers today are more health-conscious and seek data-driven insights to make informed dietary choices. This project aims to analyze **Burger King’s menu data** to uncover trends, identify the most and least nutritious items, and help users balance taste with health.  
 
----
 
-### **🎯 Purpose of the Project**  
+
+# **🎯 Purpose of the Project**  
 The goal of this project is to perform a **comprehensive data analysis** of **Burger King’s menu** using **SQL** to extract meaningful insights. 
 
 Specifically, the project aims to:  
@@ -17,9 +17,9 @@ Specifically, the project aims to:
 ✅ Analyze **fat-to-calorie and salt-to-fat ratios** to assess overall health impact.  
 ✅ Provide insights for consumers, fitness enthusiasts, and health professionals.  
 
----
 
-### **🔍 Key Problem Statement**  
+
+# **🔍 Key Problem Statement**  
 Fast-food chains offer a wide range of menu items, but **customers often struggle** to differentiate between **healthy and unhealthy choices**. 
 The key challenges this project aims to address are:  
 
