@@ -30,3 +30,6 @@ The key challenges this project aims to address are:
 
 By leveraging **SQL queries**, this project seeks to answer these critical questions, enabling better food choices.  
 
+
+# 💻 **SQL Code**
+
