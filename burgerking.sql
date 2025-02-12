@@ -40,7 +40,7 @@ ORDER BY percentage DESC;
 
 SELECT X.*
 FROM (
-    SELECT *, row_number() OVER(PARTITION BY category ORDER BY 'Protein (g)') AS rn
+    SELECT *, dense_rank() OVER(PARTITION BY category ORDER BY 'Protein (g)') AS rn
     FROM burger_king_menu
 ) X
 WHERE X.rn = 1;
