@@ -52,17 +52,22 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     GROUP BY category
     ORDER BY percentage DESC;
 
+![Image](https://github.com/user-attachments/assets/6fb0a72b-2518-464d-97c9-d16ad55d0026)
 
 ## 📊 **Insights :**
 
-- **Beverages Drive the Highest Sales** – The **Beverage** category accounts for the largest share (30.52%), indicating that drinks contribute significantly to overall revenue. This could suggest a high demand for soft drinks, coffee, or other beverages, possibly driven by combo meal purchases.  
+- **Beverages** make up the **largest portion of the menu**, comprising over 30% of items, indicating a strong focus on drink options.
 
-- **Breakfast and Burgers Are Key Menu Items** – **Breakfast (14.94%)** and **Burgers (13.64%)** are among the top-selling categories, showing that these are core offerings customers frequently purchase. Breakfast's strong performance may indicate a loyal morning customer base.  
+- **Breakfast items** are the second most numerous category at **14.94%**, showing that Burger King has a significant range of breakfast options.
 
-- **Low-Performing Categories Offer Growth Potential** – Categories like **Desserts (5.84%)** and **Additional Options (6.49%)** have the lowest shares. This suggests an opportunity to boost their sales through promotions, bundling strategies, or product innovation.
+- **Burgers and Chicken & More** together make up a combined 25.68%, reflecting Burger King's traditional focus on burgers and chicken products.
+
+- **Salads & Sides** are a **smaller but still relevant part of the menu**, making up nearly 10% of the items.
+
+- **BK Café and Additional Options** represent minor sections of the menu, with Desserts at the lowest percentage, making up just 5.84% of the menu items.
 
 
-# ❓ Most Nutritious Item per Category (Highest Protein)
+## ❓ Most Nutritious Item per Category (Highest Protein)
 
 
 ## ⌨️ **SQL Code :**
@@ -74,17 +79,23 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ) X
     WHERE X.rn = 1;
 
+![Image](https://github.com/user-attachments/assets/023c3508-6497-47ee-9353-4aa992f1add1)
 
 ## 📊 **Insights :**
 
-- **Burgers and Chicken Items Are High in Protein** – The Triple WHOPPER Sandwich with Cheese (71g) and Chicken Nuggets (20pc) (45g) provide significant protein content, making them ideal for protein-conscious customers. These items can be marketed toward customers looking for high-protein meals.
+- **Burgers have the highest protein item**: the Triple Whopper Sandwich with Cheese contains a significant 71 grams of protein, making it the most protein-rich item on the menu.
 
-- **Breakfast Offers a Protein-Rich Option** – The EGG-NORMOUS BURRITO (34g) is a strong source of protein in the breakfast category, appealing to customers looking for a filling morning meal. This suggests an opportunity to emphasize protein in breakfast promotions.
+- **Chicken & More** also offers high protein, with **Chicken Nuggets (20pc)** providing 45 grams of protein, making it a strong contender in the nutritious category.
 
-- **Dairy-Based Beverages and Desserts Also Contribute to Protein Intake** – Items like Fat-Free Milk (9g) and OREO Cookie Chocolate Shake (14g) show that beverages and desserts can also be sources of protein, which could be leveraged in marketing to highlight nutritional benefits.
+- **Breakfast** is represented by the **Egg-normous Burrito**, which packs 34 grams of protein, making it a good option for a protein-filled start to the day.
 
+- **Salads & Sides**: the **Chicken Club Salad (without dressing)** is also a top contestant, with 45 grams of protein.
 
-# ❓ Top 10 items with the highest calories
+- **BK Café** and **Beverages** provide relatively lower protein items, such as **BK Café** Iced **Mocha Coffee** (3 g) and **Fat-Free Milk** (9 g).
+
+- **Desserts** offer the **Oreo Cookie Chocolate Shake**, which has 14 grams of protein, making it a sweet yet protein-rich option.
+
+## ❓ Top 10 items with the highest calories
 
 
 ## ⌨️ **SQL Code :**
@@ -93,17 +104,19 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY calories DESC
     LIMIT 10;
 
+![Image](https://github.com/user-attachments/assets/44625a3a-f00d-4080-9cac-20260b0d57bb)
 
 ## 📊 **Insights :**
 
--- **Burgers Dominate the High-Calorie List** – Out of the top 10 highest-calorie items, six belong to the Burgers category, with the RODEO King™ Sandwich (1300 calories) being the most calorific item. This highlights that burger-based items contribute significantly to calorie intake.
+- **Burger King burgers dominate the high-calorie items** : burgers make up seven of the top ten items. **The Rodeo King™ Sandwich** leads the list with **1300 calories**, followed by other Whopper variants and the **Single Stacker King**.
 
--- **Chicken Nuggets Are Also High in Calories** – Both Spicy Chicken Nuggets (1050 calories) and Regular Chicken Nuggets (970 calories) (20pc servings) are among the top 10 highest-calorie items. This suggests that large servings of fried chicken products significantly impact calorie consumption.
+- **Chicken items are also calorie-dense**: the **Spicy Chicken Nuggets (20pc)** and **Chicken Nuggets (20pc)** provide 1050 and 970 calories, respectively.
 
--- **Breakfast and Sides Can Be Calorie-Heavy** – The BK Ultimate Breakfast Platter (970 calories) is the highest-calorie breakfast item, showing that some morning meals can be as calorie-dense as burgers. It might be worth highlighting lower-calorie breakfast options for customers seeking lighter choices.
+- **Breakfast item on the list**: the **BK Ultimate Breakfast Platter**, with **970 calories**, is the only breakfast item in the top ten. It reflects a significant amount of calories typical of hearty breakfast options.
 
+- **Whoppers and Stackers take the lead**: the **Double Whopper Sandwiches** and Single Quarter Pound King are also high calorie, a common characteristic of larger sandwiches that include multiple meats, cheese, and sauces.
 
-# ❓ Top 10 items with the highest fat content
+## ❓ Top 10 items with the highest fat content
 
 
 ## ⌨️ **SQL Code :**
@@ -112,18 +125,20 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY 'Fat (g)' DESC
     LIMIT 10;
 
+![Image](https://github.com/user-attachments/assets/94e98a04-0e26-4308-a354-901f82146a1d)
 
 ## 📊 **Insights :**
 
-- **Burgers Are the Primary Source of High Fat Content** – Out of the top 10 highest-fat items, six belong to the Burgers category, with the RODEO King™ Sandwich (83g fat) leading the list. These burgers contain high levels of saturated and trans fats, which can contribute to health concerns if consumed frequently.
+- **Burger items dominate the fat content**: burgers make up seven of the top ten items. The **Rodeo King™ Sandwich** leads with 83 grams of fat, followed closely by the **Triple Whopper Sandwich with Cheese** and **Bacon King™ Sandwich**, which have 82 and 81 grams of fat, respectively.
 
-- **Chicken Nuggets Contain Significant Fat** – Both the Spicy Chicken Nuggets (74g fat, 20pc) and Regular Chicken Nuggets (62g fat, 20pc) rank among the highest in fat content. While chicken is often considered a lean protein, the deep-frying process substantially increases fat content.
+- **Chicken options also high in fat**: both **Spicy Chicken Nuggets (20pc)** and **Chicken Nuggets (20pc)** contain significant fat amounts (74 and 62 grams), making them calorie-dense and fat-rich options.
 
-- **Breakfast Items Can Be High in Fat** – The Double CROISSAN'WICH with Sausage (54g fat) appears in the top 10, showing that some breakfast choices can contain as much fat as large burgers. Customers looking for lower-fat breakfast options might need to consider alternatives.
+- **Breakfast item** included: the **Double Croissan’wich with Sausage** has 54 grams of fat, making it a high-fat breakfast option.
+
+- **Large sandwiches and combined meats**: items like the **Double Whopper Sandwiches** and **Single Quarter Pound King Sandwich** also have high fat content, commonly found in larger sandwiches with multiple meats and cheese.
 
 
-
-# ❓ Top 10 Highest Trans Fat Items
+## ❓ Top 10 Highest Trans Fat Items
 
 
 ## ⌨️ **SQL Code :**
@@ -133,17 +148,34 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY 'Trans Fat (g)' DESC
     LIMIT 10;
 
+![Image](https://github.com/user-attachments/assets/67d322b7-3789-49f7-86ea-0e27fd68727c)
 
 ## 📊 **Insights :**
 
-- **Burgers and Breakfast Items Dominate High Trans Fat Content** – The Triple WHOPPER with Cheese (4.5g trans fat) has the highest trans fat content, followed by breakfast items like the BK Ultimate Breakfast Platter (1.5g) and EGG-NORMOUS BURRITO (1.5g). This indicates that both heavy burgers and large breakfast options contribute significantly to unhealthy trans fat intake.
+- **Triple Whopper leads in trans fat**:
 
-- **High Trans Fat in Signature Burgers** – Six of the ten items are burgers, with most containing 1g or more of trans fat. These include the RODEO King, BACON King, and Single Stacker King, all of which have over 1000 calories and high saturated fat as well.
+     - At **4.5g of trans fat**, the **Triple Whopper Sandwich with Cheese** stands out significantly above all other menu items.
 
-- **Breakfast Options Are Not Always a Healthier Alternative** – Many people perceive breakfast items as a lighter meal, but four breakfast items appear in the top 10, including the Croissan'wich with Sausage, Egg & Cheese (1g trans fat). Some of these have higher cholesterol levels than burgers, making them an equally risky option for heart health.
+     - This single item contains **300% more trans fat** than any other item on the list.
+
+- **Breakfast category dominates**:
+
+     - **8 out of 10** of the highest trans fat items come from the **breakfast category**.
+
+     - Common ingredients like **processed meats, biscuits, and croissants** likely contribute to the trans fat content.
+
+- **Multiple items with same trans fat value**:
+
+     - Several breakfast items contain exactly 1.0g of trans fat, suggesting a standardized use of certain ingredients.
+
+- **Potential health risk**:
+
+     - **Trans fats are associated with increased risk of heart disease, stroke, and type 2 diabetes.**
+
+     - Even small amounts are considered harmful according to **FDA and WHO guidelines.**
 
 
-# ❓ Top 10 Highest Dietary Fiber Items
+## ❓ Top 10 Highest Dietary Fiber Items
 
 ## ⌨️ **SQL Code :**
 
@@ -152,30 +184,43 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY 'Dietary Fiber (g)' DESC
     LIMIT 10;
 
-
+![Image](https://github.com/user-attachments/assets/1ddda35b-ff98-4fa0-8b7b-f87f615bd97d)
 
 ## 📊 **Insights :**
 
-- **Crispy Chicken Sandwiches Have the Most Fiber**
+- **Chicken category dominates fiber list**:
 
-   - The Bacon & Swiss Royal Crispy Chicken Sandwich (9g fiber), Spicy Royal Crispy Chicken Sandwich (9g fiber), and Classic Royal Crispy Chicken Sandwich (9g fiber) lead the list.
+     - **4 of the top 5** high-fiber items belong to the **"Chicken & More" category**, indicating that breaded or crispy chicken options may contain significant fiber due to the coating or additives.
 
-   - These options provide both protein and fiber, making them a relatively balanced choice compared to other high-calorie menu items.
+- **Fiber from sides & breakfast**:
 
-- **Sides and Breakfast Items Also Provide Fiber**
+    -  **Onion rings** (large & medium) and **hash browns** add a noticeable amount of fiber, making sides a potential fiber boost for meals.
 
-   - Large Onion Rings (7g fiber) and Hash Browns (6g fiber - large, 5g fiber - medium) rank among the highest fiber items.
+    -  Breakfast items like the **NY Ultimate Platter** contribute moderate fiber, likely from starchy components like potatoes and biscuits.
 
-   - While these offer fiber, they also come with high fat and sodium, making them less ideal for a healthy diet.
+- **Surprising sources of fiber**:
 
-- **High Fiber Doesn’t Always Mean Healthy**
+     - Traditionally unhealthy items like the **Double Stacker King Burger** still provide **6g of fiber**, possibly due to buns and vegetable toppings.
 
-   - Many of these items, like the Spicy Chicken Nuggets (9g fiber, 74g fat) and the Double Stacker King (6g fiber, 32g fat), are still high in fat and calories.
+- **Fiber for digestive health**:
 
-   - It’s essential to balance fiber intake with lower-fat options for a healthier meal choice.
+     - Dietary fiber is crucial for **digestive wellness, blood sugar regulation, and satiety**.
+
+     - These high-fiber items may be useful for people looking to meet daily fiber goals even when eating out.
 
 
 # ❓ Healthy Index Score (Custom Formula)
+
+    Healthy Index Score = ( Protein + Dietary Fiber ) / ( Calories + Fat + 1 )
+
+
+
+ ​-  Protein and Dietary Fiber contribute positively to the score.
+
+ - Calories and Fat contribute negatively to the score (since they increase the overall health impact).
+
+ - The **"+1" is added to avoid division by zero.**
+
 
 ## ⌨️ **SQL Code :**
 
@@ -186,30 +231,30 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     LIMIT 10;
 
 
+![Image](https://github.com/user-attachments/assets/32e38c6d-7606-43c2-bfe2-d830e2defca8)
+
+
 ## 📊 **Insights :**
 
-- **Salads Rank Higher Than Most Burgers**
+- **Salads & Sides Take the Lead**: **3 out of the top 4 items** are salads without dressing, which significantly reduces fat and calories while preserving fiber and protein.
 
-   - The Chicken Club Salad (50.0) and Chicken Garden Salad (43.0) score well despite being lower in calories and fat, making them relatively healthier options.
+- **Beverage Category Surprise**: **Fat Free Milk** tops the list, showing how a **simple, low-fat dairy drink** offers high protein and calcium with low fat and sugar.
 
-   - This indicates that reducing fat and sodium plays a key role in a higher health score.
+- **Balanced Burger Options Exist**: **Double Hamburger** and **Single Quarter Pound King** rank well due to a relatively better **protein-to-fat ratio** and **moderate calories**, compared to other heavy burgers.
 
-- **Some Burgers Score Surprisingly High**
-
-   - The Triple WHOPPER with Cheese (52.0) and Single Quarter Pound King (51.5) top the list.
-
-   - This suggests that protein content is a major factor in the health score, despite their high fat and calorie levels.
-
-- **Chicken Items Score in the Mid-Range**
-
-   - The Bacon & Swiss Royal Crispy Chicken Sandwich (38.5) and 20pc Chicken Nuggets (35.5) are in the lower half of the rankings.
-
-   - While chicken is often considered a "healthier" choice, fried versions bring down their health score due to high fat and sodium content.
-
-
+- **Chicken Sandwiches in Moderation**: **Royal Crispy Chicken variants** score high due to their **protein content**, despite being slightly higher in fat.
 
 
 # ❓ Finding the Most Balanced Meal (Equal Fat, Protein, and Carbs)
+
+- **Normalize the Nutrient Differences**: Subtract the values of each nutrient (Fat, Protein, and Carbs) from each other, then take the **absolute value** to find the difference.
+
+- **Calculate the Total Difference**: The sum of the differences will give you a measure of how "unbalanced" the meal is. The smaller the value, the more balanced the meal is.
+
+        Balance Score = | Fat − Protein | + | Protein - Carbs | + | Carbs  - Fat | 
+
+- **Smaller Balance Score**: The meal with the smallest Balance Score will be the most balanced.
+
 
 ## ⌨️ **SQL Code :**
 
@@ -236,10 +281,18 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY category, balance_score;
 
 
+![Image](https://github.com/user-attachments/assets/24c26707-54bf-4b07-8164-9a0174edcb96)
+
 
 ## 📊 **Insights :**
 
-- It looks like your "Most Balanced Meal" calculation is being dominated by beverages, which have zero protein, fat, and carbs—resulting in a balance score of 0.0.
+- **American Cheese Slice** – the **most nutritionally balanced item**, though small in quantity, with very close values in fat, protein, and carbs.
+
+- **Chicken Nuggets (4pc)** and **Sandwiches** like the **Single Quarter Pound King** deliver **balanced macronutrient ratios**, making them suitable for those aiming for equilibrium over extremes.
+
+- **Salads and side items** like **Garden Side Salad** also show balance, particularly when consumed without dressing.
+
+- **Sugary and dessert items** (e.g., Soft Serve Cone, Cookies) tend to have **high carbs but low protein and fat**, making them imbalanced despite low calories.
 
 
 # ❓ High-Protein, Low-Carb Options
@@ -257,21 +310,40 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
      WHERE percentile_rank >= 0.9
      ORDER BY protein_g DESC, total_carb_g ASC;
 
-
+![Image](https://github.com/user-attachments/assets/eb9c7c5e-86d3-41c7-9ac1-0ddc3e56f9ec)
 
 ## 📊 **Insights :**
+- **High Protein Content**:
 
-- Garden Side Salad (9g protein, 3g carbs) → A great low-carb, high-protein choice.
+  - The **Triple WHOPPER Sandwich with Cheese** tops the list with **71g of protein**, followed closely by the **Bacon KingTM Sandwich (66g)** and **Single Stacker King (65g)**, all from the **Burgers** category. These items provide a **high protein intake**, making them ideal for those looking to build muscle or increase protein consumption.
 
-- American Cheese (2g protein, 1g carb) → Good as a topping for added protein.
+- **Moderate Protein & High Carbs**:
 
-- Crispy Taco (5g protein, 19g carbs) → The carb count is a bit high.
+  - Many of the high-protein options like the **RODEO KingTM Sandwich (63g protein, 77g carbs)** and **Single Quarter Pound King Sandwich (57g protein, 56g carbs)** also contain significant **carb content**, making them a **more energy-dense option**, suitable for individuals needing energy-intensive meals.
 
-- Buttery Garlic Croutons (1g protein, 9g carbs) → Mostly carbs, low protein.
-  
+- **Balanced Options**:
+
+  - The **Chicken Nuggets- 20pc** and **Chicken Club Salad (without dressing)**, both in the **Chicken & More and Salads & Sides** categories, offer **45g of protein** while maintaining a reasonable carb count (60g and 82g, respectively). These items strike a balance between **protein** and **carbs**, providing a good choice for those seeking a combination of both nutrients.
+
+- **Slightly Lower Protein but High Carbs**:
+
+  - Items like the **Bacon & Cheese WHOPPER Sandwich (40g protein, 56g carbs)** and **Spicy Chicken Nuggets- 20pc (40g protein, 56g carbs)** offer **moderate protein** but are still **carb-heavy**, making them more filling and suitable for those seeking a heartier meal.
+
+- **Breakfast Option**:
+
+  - The **EGG-NORMOUS BURRITO**, with **34g of protein** and **69g of carbs**, is the **highest-protein breakfast item**, making it an excellent choice for a high-protein breakfast option for individuals looking to start their day with a **protein-rich meal**.
+
+- **Healthier Choices**:
+
+  - The **Chicken Garden Salad (without dressing)** and **Chicken Club Salad (without dressing)** provide **36g and 45g of protein**, respectively, while keeping the carb content at **56g and 82g**. These are relatively healthier options for those looking to **maintain protein** intake while keeping their **carb consumption** in check.
 
 
 # ❓ Salt-to-Fat Ratio
+
+ -  **What's the Salt-to-Fat Ratio?**
+    - **A higher salt-to-fat ratio means** you're getting a **lot of salt** for each gram of fat, which can be important for those monitoring **salt intake** (e.g., those with high blood pressure).
+
+    - **Low-fat items** like the **IMPOSSIBLE Whopper** and **Hamburger** have a **lower salt-to-fat ratio** (56) but still contain **significant sodium.**
 
 ## ⌨️ **SQL Code :**
 
@@ -280,18 +352,30 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY salt_fat_ratio DESC
     LIMIT 10;
 
+![Image](https://github.com/user-attachments/assets/d8f38e93-7071-4fb2-9874-cbeb7705d875)
 
 ## 📊 **Insights :**
 
-- Ham, Egg, & Cheese Biscuit (70.0) – The highest sodium-to-fat ratio; might be too salty for some.
+-  **Items to Watch Out For**:
 
-- Buttery Garlic Croutons (60.0) – Small but salty; mostly carbs, low fat.
+    - **Ham, Egg & Cheese Biscuit: 70 is extremely high** – avoid if reducing sodium intake is a concern.
 
-- Chicken Fries (60.0) – High sodium snack with moderate fat.
+    - **Bacon, Egg & Cheese Biscuit (52.7) is also high**, though slightly lower than the former.
 
-- IMPOSSIBLE Whopper (56.0) – Even the plant-based option has a high sodium-to-fat ratio.
+-  **Highest Salt-to-Fat Ratios**:
 
-- American Cheese (51.4) – Small but still quite salty.
+    - **Ham, Egg & Cheese Biscuit leads with a ratio of 70** (1610mg sodium per 23g fat), indicating extremely high salt per fat content.
+
+- **Other notable high ratios**:
+
+   - **Cheeseburger & Chicken Fries (9 pc)**: 60.00 each (780mg sodium per 13g fat).
+
+   - **Buttery Garlic Croutons: 60.00** (180mg sodium per 3g fat).
+
+
+-  **Balanced Items**:
+
+   - **IMPOSSIBLE Whopper** (56) and **Hamburger** (56) are good options for a lower salt-to-fat ratio while still providing a decent fat content.
 
 
 # ❓ Fat-to-Calorie Ratio
@@ -304,22 +388,17 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY fat_cal_ratio DESC
     LIMIT 10;
 
-
+![Image](https://github.com/user-attachments/assets/093fc457-e6ac-4099-9cb9-dfb90f92249e)
 
 ## 📊 **Insights :**
 
-- Mayonnaise (Packet) – 1.00 → All calories come from fat.
+- **Mayonnaise (Packet)** leads with **a ratio of 1.0** (80g fat per 80 calories), which means 100% of the calories come from fat.
 
-- Ken's Golden Italian Dressing – 0.95 → Nearly 95% of calories from fat!
+- **Ken's Golden Italian Dressing: 0.947** (180g fat per 190 calories) is **close** behind, showing that this dressing is **highly calorie-dense from fat**.
 
-- Zesty Onion Ring Dipping Sauce – 0.93 → More fat than expected.
+- **Zesty Onion Ring Dipping Sauce** and **Ranch Dipping Sauce** also have **relatively high ratios (0.93 and 0.93 respectively)**, meaning they are **mostly fat**.
 
-- American Cheese (0.75) → High in fat relative to calories, but still lower than sauces.
-
-- Double CROISSAN'WICH with Sausage (0.67) → A major source of fat in a breakfast item.
-
-- Spicy Chicken Nuggets (0.64) → Despite being protein-heavy, they still pack a lot of fat.
-
+- **High fat-to-calorie ratios** like **Mayonnaise, Ken's Ranch Dressing**, and **Buffalo Dipping Sauce** can be **very calorie-dense** with **minimal nutritional diversity**, mainly providing fat and little else.
     
 # ❓ Least Healthy Items (Highest Calories & Fat)
 
@@ -330,22 +409,33 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     ORDER BY calories DESC, fat_g DESC
     LIMIT 10;
 
+![Image](https://github.com/user-attachments/assets/23bae368-6747-4437-843f-2f5d2d97d0b4)
 
 ## 📊 **Insights :**
 
+ - **Items with the Highest Calories & Fat**:
 
-- RODEO King™ Sandwich – 1,300 kcal, 83g fat
+    - **RODEO KingTM Sandwich: 1300 calories, 83g of fat** — The **most calorie-dense** and **fat-heavy** option.
 
-- Triple WHOPPER w/ Cheese – 1,220 kcal, 82g fat
+    - **Triple WHOPPER Sandwich with Cheese: 1220 calories, 82g of fat** — A **close contender**, packed with fat and calories.
 
-- BACON King™ Sandwich – 1,200 kcal, 81g fat
+    - **BACON KingTM Sandwich: 1200 calories, 81g of fat** — Another **high-calorie, high-fat** burger.
 
-- Spicy Chicken Nuggets (20 pc) – 1,050 kcal, 74g fat → Despite being “chicken,” they rank among the highest in fat.
+- **Other High-Calorie & Fat Items**:
 
-- BK Ultimate Breakfast Platter – 970 kcal, 48g fat → Even breakfast items aren’t safe from high-calorie counts.
+    - **Spicy Chicken Nuggets- 20 pc: 1050 calories, 74g of fat** — A **fried** snack high in both calories and fat.
 
-- Single Stacker King (1,130 kcal, 73g fat) → A “single” burger but still among the highest in fat.
+    - **DOUBLE WHOPPER Sandwich with Cheese: 1010 calories, 65g of fat** — Another **whopper** full of calories and fat.
 
+- **More Balanced (But Still High)**:
+
+    - **BK Ultimate Breakfast Platter: 970 calories, 48g of fat** — While the fat content is **lower**, the calories are still quite high.
+
+    - **Chicken Nuggets- 20pc: 970 calories, 62g of fat** — A **high-calorie and high-fat** snack option.
+
+- **Key Takeaway**:
+
+    - The **least healthy options** generally come from the **burgers and fried items**, where calories and fat content are the highest. These options may not be ideal for anyone looking to **manage fat and calorie intake** effectively.
 
 
 # ❓ Lowest Sodium (Healthier Choices for Heart Health)
@@ -362,45 +452,54 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     WHERE rank <= 3
     ORDER BY category, sodium_mg ASC;
 
+![Image](https://github.com/user-attachments/assets/e9b356ca-52eb-4d63-add4-8ca28e323ac9)
+![Image](https://github.com/user-attachments/assets/4f46457b-4ec7-4e8d-be47-6005369ee3ba)
 
 
 ## 📊 **Insights :**
 
+- **Zero-Sodium Options Exist**: Several beverages (like BK Cafe Coffee and Sweet Tea) and condiments (jam, syrup) contain no sodium, making them ideal for individuals watching their salt intake.
 
-- BK Café Coffee (12, 20 fl oz) – Classic black coffee, zero sodium.
+- **Salads & Sides Offer Low-Sodium Support**: Items like the Garden Side Salad and small French Fries are good low-sodium meal additions.
 
-- Unsweetened Tea (20, 29, 40 fl oz) – Good alternative to sugary drinks.
+- **Lower-Sodium Burgers & Breakfast**: Basic burgers like the Whopper Jr. and Hamburger are surprisingly moderate in sodium compared to other fast-food items.
 
-- Simply Orange Juice (11.5 oz) – Natural, no added sodium.
+- **Desserts Are Heart-Friendly**: Desserts like Chocolate Chip Cookies and Soft Serve are relatively low in sodium, making them a safer treat option.
 
-- Sweet Tea (20, 29, 40 fl oz) – While sodium-free, still high in sugar.
-
-- No solid food items in this list.
-
-
-
+# 🎯 **Presentation Link :**  
+https://gamma.app/docs/Healthy-Menu-Choices-at-Burger-King-Insights-Recommendations-yzhxvuwzotg30g8
 
 # 🏆 **Final Recommendation**  
 
--  Promote **high-fiber and high-protein meals** for customers focused on nutrition.  
+- **Promote High-Fiber and High-Protein Meals**:
+     - Encourage customers to choose menu items that are rich in **fiber** and **protein**. These nutrients are essential for digestive health, weight management, and muscle maintenance. Highlighting these items will cater to health-conscious customers.
 
-- Introduce **healthier meal combos**  that balance protein, carbs, and fat.  
-  
-- rovide **sodium-conscious menu labeling**  to help customers make heart-healthy choices.  
-  
-- timize the **menu pricing & marketing strategy**  based on the healthiest and most preferred items.  
+- **Introduce Healthier Meal Combos**:
+     - **Create meal combos** that provide a balanced mix of **protein, carbs, and fat**. These balanced meals can be marketed as the **nutritionally optimal choice** for customers aiming for a well-rounded diet.
 
-- Enhance **digital menu boards & ordering systems**  with **real-time nutritional insights**.  
+- **Provide Sodium-Conscious Menu Labeling**:
+     - Implement **sodium-conscious menu labeling** to help customers easily identify **heart-healthy options**. This will be especially beneficial for customers who are conscious of their sodium intake due to concerns over **high blood pressure and heart health**.
 
+- **Optimize Menu Pricing & Marketing Strategy**:
+     - Base **menu pricing and marketing strategies** on the **healthiest and most preferred** items. By highlighting nutrient-rich meals and offering **discounts or combos**, customers will be more likely to choose healthier options.
 
+- **Enhance Digital Menu Boards & Ordering Systems**:
+     - Integrate **real-time nutritional insights** into digital menu boards and ordering systems. This can include showing **calories, protein, fat, sodium** content for each item, allowing customers to make **informed choices** while placing their orders.
+ 
+       
 # 🎯 **Conclusion** 
 
-Through an in-depth exploration of nutritional data, this project has provided valuable insights into the healthier and unhealthier menu options available. The analysis considered various health-related factors, including dietary fiber, protein content, sodium levels, fat-to-calorie ratios, and overall health scores calculated using a custom formula.One of the key findings was the identification of high dietary fiber items , which play a crucial role in promoting digestive health and maintaining a balanced diet. These items can be strategically marketed as nutritious alternatives for health-conscious customers.
+Through this detailed analysis, we've gained valuable insights into the nutritional profiles of Burger King's menu. Key highlights of the study include:
 
-Furthermore, the health score rankings  revealed the best and worst items based on a comprehensive evaluation of their nutritional profiles. This scoring system allowed for a clear comparison of menu items, helping customers make more informed decisions.A major aspect of this study was the balanced meal analysis ⚖, which aimed to find menu items with an optimal ratio of protein, fat, and carbohydrates. Interestingly, certain beverages, such as unsweetened tea and black coffee, emerged as completely free of calories, fat, and carbohydrates, making them excellent choices for those looking to maintain a zero-calorie intake from beverages.In addition to identifying balanced meal options, the study also focused on high-protein, low-carb choices. These findings are particularly beneficial for individuals following low-carb diets or those looking to increase their protein intake for muscle maintenance and overall satiety.
+- **High-Fiber and High-Protein Meals**: Identifying menu items rich in **fiber and protein** is crucial for customers focused on promoting **digestive health** and **muscle maintenance**.
 
-Another crucial aspect was the sodium content analysis ⚡, which highlighted heart-healthy choices by ranking items with the lowest sodium levels. Since excessive sodium intake is linked to high blood pressure and cardiovascular diseases, identifying these lower-sodium menu items can help customers make healthier decisions while managing their sodium consumption.
+- **Health Score Rankings**: A **custom health score formula** allowed for a clear comparison of menu items, making it easier for customers to see which items align with their health goals. The scoring system considered **fiber, protein, fat, calories, and sodium levels**.
 
+- **Balanced Meals**: A balance of **protein, fat, and carbs** is essential for overall health. Certain beverages like **unsweetened tea and black coffee** are excellent zero-calorie choices that can support weight management.
+
+- **Sodium-Conscious Choices**: The analysis on **sodium** content allowed us to identify heart-healthy menu items with low sodium, which can aid customers in managing **blood pressure and cardiovascular health.**
+
+In conclusion, this project has equipped us with insights that can help Burger King offer healthier meal options, promote **nutritional transparency**, and encourage healthier eating habits. By implementing the recommendations above, Burger King can position itself as a leader in **healthy fast food options** while catering to a growing demand for **health-conscious dining**.
 
 
 
