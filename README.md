@@ -213,11 +213,27 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
 
 ## ⌨️ **SQL Code :**
 
-    SELECT item, protein_g, fat_g, total_carb_g, 
-           ABS(protein_g - fat_g) + ABS(protein_g - total_carb_g) AS balance_score
-    FROM burger_king_menu
-    ORDER BY balance_score ASC
-    LIMIT 10;
+    WITH Balanced AS (
+      SELECT 
+        item,
+        category,
+        fat_g,
+        protein_g,
+        total_carb_g,
+        ABS(fat_g - protein_g) + 
+        ABS(protein_g - total_carb_g) + 
+        ABS(total_carb_g - fat_g) AS balance_score
+      FROM burger_king_menu
+    ),
+    Ranked AS (
+      SELECT *,
+             ROW_NUMBER() OVER (PARTITION BY category ORDER BY balance_score ASC) AS rank
+      FROM Balanced
+    )
+    SELECT item, category, fat_g, protein_g, total_carb_g, balance_score
+    FROM Ranked
+    WHERE rank <= 3
+    ORDER BY category, balance_score;
 
 
 
