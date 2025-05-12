@@ -230,15 +230,16 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
 
 ## ⌨️ **SQL Code :**
 
-WITH SortedData AS (
+
+    WITH SortedData AS (
     SELECT item, category, protein_g, total_carb_g,
            PERCENT_RANK() OVER (ORDER BY protein_g DESC) AS percentile_rank
     FROM burger_king_menu
-)
-SELECT item, category, protein_g, total_carb_g
-FROM SortedData
-WHERE percentile_rank >= 0.9
-ORDER BY protein_g DESC, total_carb_g ASC;
+    )
+    SELECT item, category, protein_g, total_carb_g
+    FROM SortedData
+    WHERE percentile_rank >= 0.9
+    ORDER BY protein_g DESC, total_carb_g ASC;
 
 
 
