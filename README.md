@@ -228,7 +228,7 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
     SELECT item, protein_g, total_carb_g 
     FROM burger_king_menu
     WHERE total_carb_g < 20  
-    ORDER BY protein_g DESC
+    ORDER BY protein_g DESC,total_carb_g ASC
     LIMIT 10;
 
 
