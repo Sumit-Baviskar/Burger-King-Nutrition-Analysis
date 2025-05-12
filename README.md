@@ -225,11 +225,16 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
 
 ## ⌨️ **SQL Code :**
 
-    SELECT item, protein_g, total_carb_g 
+WITH SortedData AS (
+    SELECT item, category, protein_g, total_carb_g,
+           PERCENT_RANK() OVER (ORDER BY protein_g DESC) AS percentile_rank
     FROM burger_king_menu
-    WHERE total_carb_g < 20  
-    ORDER BY protein_g DESC,total_carb_g ASC
-    LIMIT 10;
+)
+SELECT item, category, protein_g, total_carb_g
+FROM SortedData
+WHERE percentile_rank >= 0.9
+ORDER BY protein_g DESC, total_carb_g ASC;
+
 
 
 ## 📊 **Insights :**
@@ -325,10 +330,16 @@ By leveraging **SQL queries**, this project seeks to answer these critical quest
 
 ## ⌨️ **SQL Code :**
 
-    SELECT item, sodium_mg 
+WITH RankedItems AS (
+    SELECT item, sodium_mg, category,
+           ROW_NUMBER() OVER (PARTITION BY category ORDER BY sodium_mg ASC) AS rank
     FROM burger_king_menu
-    ORDER BY sodium_mg ASC
-    LIMIT 10;
+)
+SELECT item, sodium_mg, category
+FROM RankedItems
+WHERE rank <= 3
+ORDER BY category, sodium_mg ASC;
+
 
 
 ## 📊 **Insights :**
